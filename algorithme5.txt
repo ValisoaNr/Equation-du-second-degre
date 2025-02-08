@@ -1,0 +1,43 @@
+Algorithme : Equation du second degré
+Variables	a , b , c , delta , x , x1 , x2 , re , img : réelle ;
+Début :	
+	ECRIRE( « soit a x² + b x + c = 0 » ) ;  *presentation du programme*
+	ECRIRE( « Entrez la valeur de a : » );
+	LIRE( a ) ;
+	ECRIRE( « Entrez la valeur de b : » ) ;
+	LIRE( b ) ;
+	ECRIRE( « Entrez la valeur de c : » ) ;
+	LIRE( c ) ;
+	
+	SI	(	( a = 0 ) ET (b <> 0)	)	ALORS
+		x <--  ( -c / b ) ;
+		ECRIRE( « x = » , x) ;
+	
+		SINON
+			delta  <-- (   ( b * b )  –  ( 4 * a * c )   ) ; * calcule du discriminant DELTA *
+		
+			SI	( delta = 0 )	ALORS
+				x <-- (  (-b) / ( 2 * a )  ) ;
+				ECRIRE(« x = » , x ) ;
+					
+				SINON SI	( delta > 0 )	ALORS
+						x1 <-- ( -b – racine( delta ) ) / ( 2 * a ) ;
+						x2 <-- ( -b + racine( delta ) ) / ( 2 * a ) ;
+						ECRIRE( « Alors ; x1 = » , x1 ) ;
+						ECRIRE( « Et  x2 = » , x2  ) ;
+					
+						SINON
+							re <-- ( -b ) / ( 2 * a ) ; //partie reelle
+							img <-- ( racine( -delta ) ) / ( 2 * a ) ; //partie imaginaire
+							
+							 * affichage des resultats par partie *
+							ECRIRE( « Alors ; x1 = » , re , « - » , img  , « i » ) ;
+							ECRIRE( « Et  x2 = » , re , « + » , img , « i » ) ;
+	
+					FINSI
+				
+			FINSI
+
+	FINSI
+
+fin
