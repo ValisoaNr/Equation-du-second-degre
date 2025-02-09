@@ -16,8 +16,8 @@ float main ()
 	
 	if ( (a==0) && (b!=0) )
 	{
-			x = ( -c/b ) ;
-			printf("Alors ;\n x = %f\n",x) ;
+		x = ( -c/b ) ;
+		printf("Alors ;\n x = %f\n",x) ;
 	}
 		
 			else
