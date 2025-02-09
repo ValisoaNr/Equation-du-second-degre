@@ -15,10 +15,10 @@ float main ()
 	scanf("%f",&c);
 	
 	if ( (a==0) && (b!=0) )
-		{
+	{
 			x = ( -c/b ) ;
 			printf("Alors ;\n x = %f\n",x) ;
-		}
+	}
 		
 			else
 			{
