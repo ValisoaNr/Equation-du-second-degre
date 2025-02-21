@@ -27,8 +27,8 @@ Début :
 						ECRIRE( « Et  x2 = » , x2  ) ;
 					
 						SINON
-							re <-- ( -b ) / ( 2 * a ) ; //partie reelle
-							img <-- ( racine( -delta ) ) / ( 2 * a ) ; //partie imaginaire
+							re <-- ( -b ) / ( 2 * a ) ; *partie reelle*
+							img <-- ( racine( -delta ) ) / ( 2 * a ) ; *partie imaginaire*
 							
 							 * affichage des resultats par partie *
 							ECRIRE( « Alors ; x1 = » , re , « - » , img  , « i » ) ;
